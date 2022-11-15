@@ -1,0 +1,18 @@
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+    - package-ecosystem: "npm"
+        target-branch: "master"
+        directory: "/"
+        schedule:
+            timezone: "America/Sao_Paulo"
+            interval: "daily"
+            time: "18:15"
+        open-pull-request-limit: 10
+        pull-request-branch-name:
+            separator: "-"
+        ignore:
+            -   dependency-name: "*"
+                update-types: [ "version-update:semver-major" ]
