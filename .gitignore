@@ -1,5 +1,10 @@
-# npm
+.DS_Store
 node_modules
-
-# svelt
-public/build
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+.vercel
+.output
