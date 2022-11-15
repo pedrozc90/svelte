@@ -8,11 +8,12 @@ updates:
         directory: "/"
         schedule:
             timezone: "America/Sao_Paulo"
-            interval: "daily"
-            time: "18:15"
+            interval: "weekly"
+            time: "23:59"
+            day: "friday"
         open-pull-request-limit: 10
         pull-request-branch-name:
             separator: "-"
-        ignore:
-            -   dependency-name: "*"
-                update-types: [ "version-update:semver-major" ]
+        # ignore:
+        #     -   dependency-name: "*"
+        #         update-types: [ "version-update:semver-major" ]
