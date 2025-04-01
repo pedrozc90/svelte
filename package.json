@@ -12,9 +12,9 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@fontsource/fira-mono": "^5.2.0",
-		"@neoconfetti/svelte": "^2.2.1",
-		"@playwright/test": "1.50.1",
+		"@fontsource/fira-mono": "^5.2.5",
+		"@neoconfetti/svelte": "^2.2.2",
+		"@playwright/test": "1.51.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^1.0.0",
@@ -23,7 +23,7 @@
 		"eslint": "^9.21.0",
 		"eslint-config-prettier": "^10.0.2",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^3.5.2",
+		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"svelte": "^5.20.5",
 		"svelte-check": "^4.1.4",
