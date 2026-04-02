@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@fontsource/fira-mono": "^5.2.7",
 		"@neoconfetti/svelte": "^2.2.2",
-		"@playwright/test": "1.58.2",
+		"@playwright/test": "1.59.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^1.0.0",
