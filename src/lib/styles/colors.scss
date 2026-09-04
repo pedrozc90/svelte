@@ -1,0 +1,41 @@
+// Every color value lives here. Two layers:
+//   1. Palette  — raw hex, named by hue/shade.
+//   2. Semantic — what components use, exposed as CSS custom properties on :root
+//      so a single import in +layout.svelte makes them global (no :global needed).
+// Components reference the semantic custom properties only, never the palette.
+
+// 1. Palette --------------------------------------------------------------
+$greige-300: #e4e0d3; // page ground — dim warm grey, deliberately not airy cream
+$greige-250: #eae6da; // inset panel
+$greige-200: #f1eee6; // sheet
+$hairline-400: #d2cdbe;
+
+$ink-900: #332f27; // warm brown-black, true ink
+$ink-500: #6b6659;
+
+$indigo-600: #42476e; // fountain-pen accent
+
+$leaf-well: #5f7052; // healthy foliage
+$leaf-fair: #b08a3e; // stressed foliage
+$leaf-poor: #7a5a3c; // dying foliage
+
+$pot-700: #9c7b63; // terracotta pot, kept muted and small
+$soil-800: #4a3f34;
+
+// 2. Semantic -----------------------------------------------------------
+:root {
+	--color-bg: #{$greige-300};
+	--color-surface-1: #{$greige-200};
+	--color-surface-2: #{$greige-250};
+	--color-hairline: #{$hairline-400};
+
+	--color-text: #{$ink-900};
+	--color-text-muted: #{$ink-500};
+	--color-accent: #{$indigo-600};
+
+	--leaf-well: #{$leaf-well};
+	--leaf-fair: #{$leaf-fair};
+	--leaf-poor: #{$leaf-poor};
+	--pot: #{$pot-700};
+	--soil: #{$soil-800};
+}

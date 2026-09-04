@@ -1,0 +1,38 @@
+// Font families and the type scale. Imported once in +layout.svelte alongside
+// colors.scss. Exposed as CSS custom properties on :root.
+//
+// Two faces, one clear split:
+//   Arimo    — a Helvetica/Arial-metric grotesque. The readout: title, stat
+//              names, index numbers, meta. It measures.
+//   Newsreader — a literary serif. The assessment paragraph and its heading.
+//              It judges.
+// Loaded from Google Fonts via <link> in src/app.html (no vendored files).
+
+// Families -------------------------------------------------------------
+$font-sans: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+
+// Type scale ---------------------------------------------------------
+$size-title: 1.75rem; // "Roast My Plant"
+$size-read: 1.125rem; // assessment paragraph
+$size-body: 1rem; // assessment heading, condition value
+$size-stat: 0.9375rem; // stat name + index number
+$size-meta: 0.8125rem; // specimen line, muted notes
+
+:root {
+	--font-sans: #{$font-sans};
+	--font-serif: #{$font-serif};
+
+	--size-title: #{$size-title};
+	--size-read: #{$size-read};
+	--size-body: #{$size-body};
+	--size-stat: #{$size-stat};
+	--size-meta: #{$size-meta};
+
+	--weight-regular: 400;
+	--weight-medium: 500;
+	--weight-bold: 700;
+
+	--leading-read: 1.6; // serif body wants a little more air
+	--leading-tight: 1.15;
+}
